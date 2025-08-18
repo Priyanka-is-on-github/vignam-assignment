@@ -8,13 +8,17 @@ export default function VideoSection() {
     <section id="video" className="w-full flex justify-center  bg-gray-50">
       <div className="w-full  relative aspect-video overflow-hidden shadow-lg">
         {/* Responsive YouTube Embed */}
-        <iframe
-          className="w-full h-full"
-          src="https://www.youtube.com/embed/E1czmX6bjFA?start=10&rel=0&modestbranding=1"
-          title="Vignam Text to Simulations"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
+       <video
+  className="w-full h-full object-cover"
+  src="/video/videoplayback.mp4"
+  autoPlay
+  muted
+  loop
+  playsInline
+  controls={false}
+>
+  Your browser does not support the video tag.
+</video>
 
         {/* SOUND ON Button - bottom left */}
         <div className="absolute top-4 left-2 sm:top-10 sm:left-4">

@@ -8,7 +8,7 @@ export default function Navbar() {
 
   return (
     <header className="w-full   fixed left-0 top-0 z-50 ">
-      <div className="flex items-center justify-between px-4 py-3 md:py-4 ">
+      <div className="flex items-center justify-between bg-white border-b px-4 py-3 md:py-4 ">
         {/* Left section */}
         <div className="flex items-center gap-2">
           <span className="font-bold text-lg">⚙️ Forge</span>
