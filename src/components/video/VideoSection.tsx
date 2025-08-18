@@ -1,6 +1,6 @@
 "use client";
 
-import {  ArrowRight, Volume2 } from "lucide-react";
+import { ArrowRight, Volume2 } from "lucide-react";
 import React from "react";
 
 export default function VideoSection() {
@@ -8,17 +8,17 @@ export default function VideoSection() {
     <section id="video" className="w-full flex justify-center  bg-gray-50">
       <div className="w-full  relative aspect-video overflow-hidden shadow-lg">
         {/* Responsive YouTube Embed */}
-       <video
-  className="w-full h-full object-cover"
-  src="/video/videoplayback.mp4"
-  autoPlay
-  muted
-  loop
-  playsInline
-  controls={false}
->
-  Your browser does not support the video tag.
-</video>
+        <video
+          className="w-full h-full object-cover"
+          src="/video/videoplayback.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
+          controls={false}
+        >
+          Your browser does not support the video tag.
+        </video>
 
         {/* SOUND ON Button - bottom left */}
         <div className="absolute top-4 left-2 sm:top-10 sm:left-4">
