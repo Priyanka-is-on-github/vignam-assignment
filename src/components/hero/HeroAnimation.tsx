@@ -9,11 +9,15 @@ import * as THREE from "three";
 // 3D Model Component
 function Model() {
   const { scene } = useGLTF("/models/landing_page_motor.glb"); // Ensure this file is in public/models
-  scene.traverse((child: any) => {
-    if (child.isMesh) {
+  scene.traverse((child: THREE.Object3D) => {
+    if ((child as THREE.Mesh).isMesh) {
+      const mesh = child as THREE.Mesh;
       child.castShadow = true;
       child.receiveShadow = true;
-      child.material.side = THREE.FrontSide;
+      
+      if (mesh.material) {
+        (mesh.material as THREE.Material).side = THREE.FrontSide;
+      }
     }
   });
   return <primitive object={scene} scale={2} position={[0, 0, 0]} />;
