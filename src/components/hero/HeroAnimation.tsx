@@ -1,4 +1,4 @@
-// src/components/Hero3D.tsx
+
 "use client";
 
 import { Canvas } from "@react-three/fiber";

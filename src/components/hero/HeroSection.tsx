@@ -10,10 +10,10 @@ export default function HeroSection() {
       <div className="max-w-4xl mx-auto px-4">
         {/* Heading */}
         <h1 className="text-3xl md:text-6xl  text-gray-900 leading-tight">
-          Precision{" "}
+          Precision
           <span className="italic font-serif bg-gradient-to-r from-gray-300 via-gray-500 to-gray-300 bg-clip-text text-transparent">
             CNC
-          </span>{" "}
+          </span>
           Parts
           <br />
           Shipped as Fast as Tomorrow
@@ -21,7 +21,7 @@ export default function HeroSection() {
       </div>
 
       {/* 3D image */}
-      <div className="md:mt-6 flex justify-center gap-6 flex-wrap ">
+      <div className="md:mt-6 flex justify-center gap-6 flex-wrap">
         <Hero3D />
       </div>
 
